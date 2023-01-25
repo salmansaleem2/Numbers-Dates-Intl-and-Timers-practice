@@ -335,3 +335,19 @@ console.log(diameter);
 
 const priceCents = 435_99;
 console.log(priceCents);
+
+// working with BigInt
+const huge = 200349257495239539753487583475437n;
+const num = 23;
+console.log(huge);
+console.log(huge * BigInt(num));
+
+// Exceptions
+console.log(20n > 15);
+console.log(20n === 20);
+console.log(typeof 20n);
+console.log(20n === '20');
+
+// Divisions
+console.log(11n / 3n);
+console.log(10 / 3);
