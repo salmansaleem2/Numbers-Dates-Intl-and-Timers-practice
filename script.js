@@ -351,3 +351,27 @@ console.log(20n === '20');
 // Divisions
 console.log(11n / 3n);
 console.log(10 / 3);
+
+// Revise
+console.log(23 === 23.0, 'revise');
+
+// Base 10 - 0 to 9 = 0.1. 3/10 = 3.3333333
+console.log(0.1 + 0.2, 'revise');
+console.log(0.1 + 0.2 === 0.3, 'revise');
+
+// conversion
+console.log(Number('23'), 'revise');
+console.log(+'23', 'revise');
+
+// parsing
+console.log(Number.parseInt('30px'), 'revise');
+console.log(Number.parseInt('e30'), 'revise');
+
+console.log(Number.parseInt('  2.5rem  '), 'revise');
+console.log(Number.parseFloat('  2.5rem  '), 'revise');
+
+//  isNan
+console.log(Number.isNaN(+'23.4eb '), 'revise');
+
+// Checking if value is a number
+console.log(Number.isFinite(20 / 0), 'revise');
