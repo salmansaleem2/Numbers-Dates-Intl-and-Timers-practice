@@ -375,3 +375,41 @@ console.log(Number.isNaN(+'23.4eb '), 'revise');
 
 // Checking if value is a number
 console.log(Number.isFinite(20 / 0), 'revise');
+
+// Math Namespace
+console.log(Math.sqrt(25), 'revise');
+// Cubic root might be only way
+console.log(8 ** (1 / 3), 'revise');
+
+console.log(Math.max(5, 18, 23, 11, 2), 'revise');
+console.log(Math.max(5, 18, '23', 11, 2), 'revise');
+console.log(Math.max(5, 18, '23p', 11, 2), 'revise');
+
+console.log(Math.min(5, 18, 23, 11, 2), 'revise');
+
+console.log(Math.PI * Number.parseFloat('10px') ** 2, 'revise');
+
+//  Math and Rounding
+console.log(Math.trunc(Math.random() * 6 + 1), 'revise');
+
+//  Random integer b/w given 2 number
+const randomInteger = (min, max) => {
+  // 0...1 -> 0...(max - min) -> min...max
+  return Math.trunc(Math.random() * (max - min) + 1) + min;
+};
+console.log(randomInteger(10, 20), 'revise');
+
+// Rounding Integers
+console.log(Math.trunc(23.3), 'revise');
+
+console.log(Math.round(23.3), 'revise');
+console.log(Math.round(23.9), 'revise');
+
+console.log(Math.ceil(23.3), 'revise');
+console.log(Math.ceil(23.9), 'revise');
+
+console.log(Math.floor(23.3), 'revise');
+console.log(Math.floor(23.9), 'revise');
+
+// Rounding Decimals
+console.log((2.7).toFixed(0), 'revise');
