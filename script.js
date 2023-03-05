@@ -439,3 +439,16 @@ labelBalance.addEventListener('click', function () {
   });
 });
 // Nth
+
+// Numeric Separator
+const diameterR = 287_460_000_000;
+console.log(diameterR, 'revise');
+
+const priceInCents = 345_99;
+console.log(priceInCents, 'revise');
+
+const transferFeeR1 = 15_00;
+const transferFeeR2 = 1_500;
+
+const PI = 3.14_15;
+console.log(PI, 'revise');
