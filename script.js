@@ -452,3 +452,15 @@ const transferFeeR2 = 1_500;
 
 const PI = 3.14_15;
 console.log(PI, 'revise');
+
+// BigInt
+console.log(2 ** 53 - 1, 'revise');
+console.log(Number.MAX_SAFE_INTEGER, 'revise');
+console.log(2 ** 53 + 1, 'revise');
+console.log(2 ** 53 + 2, 'revise');
+console.log(2 ** 53 + 3, 'revise');
+console.log(2 ** 53 + 4, 'revise');
+
+console.log(2345342543543534253453535342523454354235n, 'revise');
+
+console.log(BigInt(2345342543543534253453535342523454354235), 'revise');
