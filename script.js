@@ -464,3 +464,48 @@ console.log(2 ** 53 + 4, 'revise');
 console.log(2345342543543534253453535342523454354235n, 'revise');
 
 console.log(BigInt(2345342543543534253453535342523454354235), 'revise');
+
+// Create a Date and Time
+const now = new Date();
+console.log(now);
+
+console.log(new Date('Thu Mar 09 2023 00:54:56'));
+
+console.log(new Date('December 24,2015'));
+console.log(new Date('2019-11-01T13:15:33.035Z'));
+
+console.log(new Date(2037, 10, 50));
+console.log(0);
+console.log(3 * 24 * 60 * 60 * 1000);
+
+// working with dates
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(future.getFullYear(), 'dates');
+console.log(future.getMonth(), 'dates');
+console.log(future.getDate(), 'dates');
+console.log(future.getDay(), 'dates');
+console.log(future.toISOString(), 'dates');
+console.log(future.getTime(), 'dates');
+console.log(new Date(2142238980000), 'dates');
+console.log(Date.now(), 'dates');
+
+// operation with dates
+const futureTime = new Date(2037, 10, 19, 15, 23);
+console.log(+futureTime);
+
+const calcDaysPassed = (date1, date2) => Math.abs(date2 - date1);
+
+const days1 = calcDaysPassed(new Date(2037, 10, 19), new Date(2037, 10, 4));
+
+console.log(days1 / (1000 * 60 * 60 * 24));
+
+// Experimenting   with API
+const locale = navigator.locale;
+
+console.log(locale);
+
+const n = 283741234.23;
+// console.log(n.Intl.NumberFormat('en-US').format(num));
+console.log('en-US', new Intl.NumberFormat('en-US').format(n));
+
+console.log('Germany:', new Intl.NumberFormat('de-DE').format(n));
