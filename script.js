@@ -509,3 +509,23 @@ const n = 283741234.23;
 console.log('en-US', new Intl.NumberFormat('en-US').format(n));
 
 console.log('Germany:', new Intl.NumberFormat('de-DE').format(n));
+
+// Timers
+
+// setTimeout
+const ingredients = ['olives', 'spinach'];
+const pizzaTimer = setTimeout(
+  (arg1, arg2) => console.log(`Here is your Pizza ${arg1} and ${arg2} `),
+  3000,
+  ...ingredients
+);
+console.log(...ingredients);
+
+if (ingredients.includes('spinach')) clearTimeout(pizzaTimer);
+
+// setInterval
+setInterval(() => {
+  const now = new Date();
+  let time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+  console.log(time);
+}, 1000);
